@@ -1,0 +1,662 @@
+*,
+::before,
+:after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1F2937;
+    --sub-primary-color: #4E596F;
+    --sub-sub-primary-color: #e6eeff90;
+    /*#1F2937*/
+    /* #1A2533 */
+    --secoundary-color: #ffd428;
+    --sub-secoundary-color: #27AE60;
+    /* --sub-secoundary-color: #F66165; */
+    /* #191D2B */
+    /* #27AE60 */
+    --transition: .3s;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: roboto, open-sans;
+    /* height: 1000000px; */
+}
+
+/* ************************************************************************************************************* */
+/* S  compomnents*/
+.main-btn {
+    background-color: var(--secoundary-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1.2rem;
+    transition: .3s;
+}
+
+.main-btn:hover {
+    background-color: var(--secoundary-color);
+    color: white;
+}
+
+.general-heading {
+    position: relative;
+}
+
+.general-heading .rocket {
+    color: var(--sub-primary-color);
+    font-size: 4rem;
+}
+
+.general-heading::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15%;
+    height: .25rem;
+    background-color: var(--sub-secoundary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: .75rem;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: var(--sub-sub-primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--alt-blue-color);
+} */
+
+/* E  compomnents */
+/* ************************************************************************************************************* */
+/* S navbar */
+
+.navbar {
+    background-color: var(--primary-color);
+    height: 80px;
+    max-height: 80px;
+    box-shadow: 0 5px 15px 0px var(--primary-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    border: 2px solid white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-link {
+    color: white !important;
+    transition: var(--transition);
+    position: relative;
+}
+
+.navbar .collapse .navbar-nav .nav-link:hover,
+.navbar .collapse .navbar-nav .nav-link:focus,
+.navbar .collapse .navbar-nav .nav-link.active {
+    color: var(--secoundary-color) !important;
+}
+
+
+.navbar .collapse .search {
+    cursor: pointer;
+    border-left: 2px solid var(--secoundary-color);
+    color: var(--secoundary-color);
+}
+
+.navbar .navbar-collapse {
+    transition: .5s;
+    transform: translateY(1.5rem);
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-link {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    border-bottom: 2px solid var(--sub-primary-color);
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-link:hover {
+    padding-left: 2rem !important;
+}
+
+@media (min-width: 990px) {
+    .navbar .navbar-collapse {
+        transition: .5s;
+        transform: translateY(0);
+    }
+
+    .navbar .navbar-collapse .navbar-nav .nav-link {
+        background-color: transparent;
+        border-radius: 0;
+        border-bottom: 0;
+    }
+
+    .navbar .collapse .navbar-nav .nav-link:hover {
+        transform: scale(1.2);
+        padding-left: 1rem !important;
+    }
+
+    .navbar .collapse .navbar-nav .nav-link:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: .5s;
+        border: .15rem solid transparent;
+    }
+
+    .navbar .collapse .navbar-nav .nav-link:hover::before {
+        border-radius: 50rem;
+        border: .15rem solid var(--secoundary-color);
+    }
+}
+
+
+/* E navbar */
+
+/* ************************************************************************************************************* */
+/* S landing */
+.landing {
+    height: calc(100vh - 80px);
+    background-color: var(--sub-primary-color);
+    overflow-y: hidden;
+    z-index: 0;
+}
+
+.landing .text {
+    z-index: 2;
+    /* background-color: var(--sub-primary-color); */
+}
+
+.landing .landing-animation1 {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    overflow: hidden;
+}
+
+.landing .landing-animation {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.landing .landing-animation .icon:before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing .landing-animation .icon {
+    font-size: 35rem;
+}
+
+.landing .landing-animation .icon:first-child {
+    color: var(--primary-color);
+    transform: rotate(180deg);
+    animation: animationlandingreverse 10s linear infinite;
+    text-align: center;
+    position: absolute;
+    top: -10rem;
+    left: -10rem;
+}
+
+.landing .landing-animation .icon:last-child {
+    color: var(--primary-color);
+    transform: rotate(45deg);
+    margin: 0 -.3rem;
+    animation: animationlanding 10s linear infinite;
+    position: absolute;
+    right: -10rem;
+    bottom: -10rem;
+}
+
+/* E  landing*/
+/* ************************************************************************************************************* */
+/* S features */
+.features .icon-holder {
+    color: var(--sub-secoundary-color);
+    height: 200px;
+    transition: var(--transition);
+}
+
+.features .icon-holder .pen {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+}
+
+.features .icon-holder .number {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10rem;
+    opacity: .2;
+}
+
+.features .icon-holder:hover {
+    animation: yrotation 1s linear;
+}
+
+.features .sections .section h3 {
+    color: var(--sub-primary-color);
+}
+
+/* E features */
+/* ************************************************************************************************************* */
+/* S services */
+.services {
+    background-color: var(--sub-sub-primary-color);
+}
+
+.services .content ul li a {
+    color: var(--primary-color);
+    transition: var(--transition);
+    border: 0;
+}
+
+.services .content ul li:hover a {
+    background-color: var(--secoundary-color);
+    color: white;
+    border-radius: 50rem;
+    height: 100%;
+}
+
+.services .content .sections .section img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.services .content .sections .section .img {
+    position: relative;
+    overflow: hidden;
+}
+
+.services .content .sections .section .img:before {
+    content: "UI/UX";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #27AE6095;
+    color: transparent;
+    transition: var(--transition);
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+}
+
+.services .content .sections .section:nth-child(2) .img:before {
+    content: "Web Design";
+}
+
+.services .content .sections .section:nth-child(3) .img:before {
+    content: "Front-End ";
+}
+
+.services .content .sections .section:nth-child(4) .img:before {
+    content: "Seo";
+}
+
+.services .content .sections .section:nth-child(5) .img:before {
+    content: "Social Pages";
+}
+
+.services .content .sections .section:nth-child(6) .img:before {
+    content: "Back-End";
+}
+
+.services .content .sections .section:nth-child(7) .img:before {
+    content: "Full-Stack";
+}
+
+.services .content .sections .section:last-child .img:before {
+    content: "Mobile-Apps";
+}
+
+.services .content .sections .section:hover .img:before {
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* E services */
+/* ************************************************************************************************************* */
+/* S info */
+.info .bottom .head p {
+    max-width: 30rem;
+}
+
+.info .bottom .content .left {
+    max-width: 30rem;
+}
+
+.info .bottom .content .right img {
+    max-width: 100%;
+}
+
+/* E  info*/
+/* ************************************************************************************************************* */
+/* S members of the team */
+.team {
+    background-color: var(--sub-sub-primary-color);
+}
+
+.team .bottom .head p {
+    max-width: 30rem;
+}
+
+.team .bottom .content .sections {
+    transition: .5s;
+    margin-bottom: -157px;
+}
+
+.team .bottom .content .sections:hover {
+    margin-bottom: 0;
+}
+
+.team .bottom .content .sections .section .image {
+    box-shadow: 0 0 10px 0 var(--primary-color);
+    z-index: 2;
+}
+
+.team .bottom .content .sections .section .image img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.team .bottom .content .sections .section .text {
+    background-color: #27AE6095;
+    color: white;
+    transition: .5s;
+    transform: translatey(-100%);
+}
+
+.team .bottom .content .sections .section:hover .text {
+    box-shadow: 0 0 10px 0 var(--primary-color);
+    transform: translatey(0);
+}
+
+.team .bottom .content .sections .section .text p:first-child {
+    border-bottom: 2px solid white;
+}
+
+@media (max-width:992px) {
+
+    .team .bottom .content .sections .section .text {
+        background-color: #27AE6095;
+        color: white;
+        transition: .5s;
+        transform: translatey(0);
+        box-shadow: 0 0 10px 0 var(--primary-color);
+    }
+
+    .team .bottom .content .sections {
+        margin-bottom: 0;
+    }
+
+}
+
+/* E members of the team */
+/* ************************************************************************************************************* */
+/* S partners */
+.partner .sections .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.partner .sections .section img {
+    max-width: 100%;
+}
+
+/* E  partners*/
+/* ************************************************************************************************************* */
+/* S deal*/
+.deal {
+    background-color: var(--sub-primary-color);
+    color: white;
+}
+
+/* E  deal*/
+/* ************************************************************************************************************* */
+/* S article*/
+.article {
+    background-color: var(--sub-sub-primary-color);
+}
+
+.article .sections .section .image {
+    box-shadow: 0 0 10px 0 var(--primary-color);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.article .sections .section .image::after {
+    content: "Read More";
+    width: 100%;
+    height: 100%;
+    background-color: #27AE6095;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    transform: translatey(-100%);
+    transition: var(--transition);
+}
+
+.article .sections .section .image:hover:after {
+    transform: translatey(0);
+}
+
+.article .sections .section .image img {
+    max-width: 100%;
+}
+
+.article .sections .section .text {
+    box-shadow: 0 0 10px 0 var(--primary-color);
+    background-color: #27AE6095;
+    color: white;
+}
+
+/* E article */
+/* ************************************************************************************************************* */
+/* S  email*/
+.email {
+    background-color: var(--sub-primary-color);
+    color: white;
+}
+
+.email form {
+    flex: 1;
+}
+
+.email form .textbox {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.email form .textbox::placeholder {
+    color: white;
+}
+
+/* E email */
+/* ************************************************************************************************************* */
+/* S footer */
+footer {
+    background-color: var(--primary-color);
+}
+
+footer .sections .section img {
+    width: 5rem;
+    max-width: 100%;
+}
+
+footer .sections .section p span {
+    color: var(--sub-secoundary-color);
+    font-weight: bold;
+}
+
+footer .sections .section .btn {
+    width: 100%;
+}
+
+footer .sections .section a {
+    transition: var(--transition);
+}
+
+footer .sections .section a:hover {
+    color: white !important;
+}
+
+footer .sections .section:last-child .icons a {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--sub-primary-color);
+    color: white;
+}
+
+footer .sections .section:last-child .icons a:first-child,
+footer .sections .section:last-child .icons a:nth-child(2),
+footer .sections .section:last-child .icons a:nth-child(3),
+footer .sections .section:last-child .icons a:last-child {
+    transition: .5s;
+}
+
+footer .sections .section:last-child .icons a:first-child:hover {
+    background-color: #1877f2;
+}
+
+footer .sections .section:last-child .icons a:nth-child(2):hover {
+    background-color: #000000;
+}
+
+footer .sections .section:last-child .icons a:nth-child(3):hover {
+    background-color: #0a66c2;
+}
+
+footer .sections .section:last-child .icons a:last-child:hover {
+    background-color: #ff0000;
+}
+
+@media (max-width: 767px) {
+    footer .sections {
+        text-align: center !important;
+    }
+
+}
+
+/* E footer */
+/* ************************************************************************************************************* */
+/* S animation */
+
+
+@keyframes animationlandingreverse {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    25% {
+        transform: rotate(135deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    75% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes animationlanding {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(135deg);
+    }
+
+    75% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes yrotation {
+    0% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1.2) rotateY(360deg);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* E animation */
+/* ************************************************************************************************************* */
