@@ -1,462 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bondi</title>
-    <link rel="stylesheet" href="css/bondi.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bondi.css">
-</head>
+    <link rel="stylesheet" href="css/bondi.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bondi.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PT0NCSG5S8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-<body>
+      gtag('config', 'G-PT0NCSG5S8');
+    </script>
+  </head>
+
+  <body>
     <!-- -------------------------------------------------------------------------- -->
     <!-- S navbar -->
     <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container-sm">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="">
-            </a>
-            <div class="right d-flex align-items-center">
-                <a class="btn rounded-pill main-btn me-2" href="#">Login</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                    aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item ps-2">
-                        <a class="nav-link px-3 active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item ps-2">
-                        <a class="nav-link px-3" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item ps-2">
-                        <a class="nav-link px-3" href="#servives">Services</a>
-                    </li>
-                    <li class="nav-item ps-2">
-                        <a class="nav-link px-3" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item ps-2">
-                        <a class="nav-link px-3" href="#team">Testimonials</a>
-                    </li>
-                    <li class="nav-item ps-2">
-                        <a class="nav-link px-3" href="#article">Blog</a>
-                    </li>
-                    <li class="nav-item ps-2">
-                        <a class="nav-link px-3" href="#terms">Contact</a>
-                    </li>
-                </ul>
-                <div class="search mx-2 px-2 d-none d-lg-block">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
+      <div class="container-sm">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="" />
+        </a>
+        <div class="right d-flex align-items-center">
+          <a class="btn rounded-pill main-btn me-2" href="#">Login</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item ps-2">
+              <a class="nav-link px-3 active" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item ps-2">
+              <a class="nav-link px-3" href="#features">Features</a>
+            </li>
+            <li class="nav-item ps-2">
+              <a class="nav-link px-3" href="#servives">Services</a>
+            </li>
+            <li class="nav-item ps-2">
+              <a class="nav-link px-3" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item ps-2">
+              <a class="nav-link px-3" href="#team">Testimonials</a>
+            </li>
+            <li class="nav-item ps-2">
+              <a class="nav-link px-3" href="#article">Blog</a>
+            </li>
+            <li class="nav-item ps-2">
+              <a class="nav-link px-3" href="#terms">Contact</a>
+            </li>
+          </ul>
+          <div class="search mx-2 px-2 d-none d-lg-block">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
     </nav>
     <!-- E nav bar -->
     <!-- -------------------------------------------------------------------------- -->
     <!-- S landing -->
-    <div class="landing d-flex justify-content-center align-items-center" id="home">
-        <div class="landing-animation1">
-            <div class="landing-animation">
-                <i class="fa-solid fa-gear icon fw-fa"></i>
-                <i class="fa-solid fa-gear icon fw-fa"></i>
-            </div>
+    <div
+      class="landing d-flex justify-content-center align-items-center"
+      id="home"
+    >
+      <div class="landing-animation1">
+        <div class="landing-animation">
+          <i class="fa-solid fa-gear icon fw-fa"></i>
+          <i class="fa-solid fa-gear icon fw-fa"></i>
         </div>
-        <div class="text text-center text-light">
-            <h1 class="py-2 fw-normal fs-1">Taste the Creativity</h1>
-            <p class="py-2 fs-6 text-white-50">We make awesome graphic and web design</p>
-            <a class="btn rounded-pill main-btn my-3" href="#">Get Started</a>
-        </div>
+      </div>
+      <div class="text text-center text-light">
+        <h1 class="py-2 fw-normal fs-1">Taste the Creativity</h1>
+        <p class="py-2 fs-6 text-white-50">
+          We make awesome graphic and web design
+        </p>
+        <a class="btn rounded-pill main-btn my-3" href="#">Get Started</a>
+      </div>
     </div>
     <!-- E landing -->
     <!-- -------------------------------------------------------------------------- -->
     <!-- S features-->
     <div class="features py-5" id="features">
-        <div class="container-sm">
-            <div class="general-heading py-5 text-center">
-                <i class="fa-solid fa-rocket rocket"></i>
-                <h2 class="my-3">We are good at</h2>
-                <p class="fs-6 text-black-50 my-2 text-uppercase">Some Of These Stuff Under</p>
-            </div>
-            <div class="row my-3 sections">
-
-                <div class="col-md-6 col-lg-4 text-center section">
-                    <div class="icon-holder position-relative my-3">
-                        <i class="fa-solid fa-pen position-absolute bottom-0 pen"></i>
-                        <i class="fa-solid fa-1 position-absolute bottom-0 number"></i>
-                    </div>
-                    <h3 class="my-3 fs-3">Graphic Design</h3>
-                    <p class="my-3 fs-6 lh-lg">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia
-                        eget
-                        consectetur sed, convallis at tellus.</p>
-                </div>
-
-                <div class="col-md-6 col-lg-4 text-center section">
-                    <div class="icon-holder position-relative my-3">
-                        <i class="fa-solid fa-code position-absolute bottom-0 pen"></i>
-                        <i class="fa-solid fa-2 position-absolute bottom-0 number"></i>
-                    </div>
-                    <h3 class="my-3 fs-3">Programming</h3>
-                    <p class="my-3 fs-6 lh-lg">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia
-                        eget
-                        consectetur sed, convallis at tellus.</p>
-                </div>
-
-                <div class="col-md-6 col-lg-4 text-center section">
-                    <div class="icon-holder position-relative my-3">
-                        <i class="fa-solid fa-school position-absolute bottom-0 pen"></i>
-                        <i class="fa-solid fa-3 position-absolute bottom-0 number"></i>
-                    </div>
-                    <h3 class="my-3 fs-3">Courses</h3>
-                    <p class="my-3 fs-6 lh-lg">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia
-                        eget
-                        consectetur sed, convallis at tellus.</p>
-                </div>
-            </div>
+      <div class="container-sm">
+        <div class="general-heading py-5 text-center">
+          <i class="fa-solid fa-rocket rocket"></i>
+          <h2 class="my-3">We are good at</h2>
+          <p class="fs-6 text-black-50 my-2 text-uppercase">
+            Some Of These Stuff Under
+          </p>
         </div>
+        <div class="row my-3 sections">
+          <div class="col-md-6 col-lg-4 text-center section">
+            <div class="icon-holder position-relative my-3">
+              <i class="fa-solid fa-pen position-absolute bottom-0 pen"></i>
+              <i class="fa-solid fa-1 position-absolute bottom-0 number"></i>
+            </div>
+            <h3 class="my-3 fs-3">Graphic Design</h3>
+            <p class="my-3 fs-6 lh-lg">
+              Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo,
+              lacinia eget consectetur sed, convallis at tellus.
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 text-center section">
+            <div class="icon-holder position-relative my-3">
+              <i class="fa-solid fa-code position-absolute bottom-0 pen"></i>
+              <i class="fa-solid fa-2 position-absolute bottom-0 number"></i>
+            </div>
+            <h3 class="my-3 fs-3">Programming</h3>
+            <p class="my-3 fs-6 lh-lg">
+              Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo,
+              lacinia eget consectetur sed, convallis at tellus.
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 text-center section">
+            <div class="icon-holder position-relative my-3">
+              <i class="fa-solid fa-school position-absolute bottom-0 pen"></i>
+              <i class="fa-solid fa-3 position-absolute bottom-0 number"></i>
+            </div>
+            <h3 class="my-3 fs-3">Courses</h3>
+            <p class="my-3 fs-6 lh-lg">
+              Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo,
+              lacinia eget consectetur sed, convallis at tellus.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- E features-->
     <!-- -------------------------------------------------------------------------- -->
     <!-- S services-->
     <div class="services py-5" id="servives">
-        <div class="container-sm">
-            <div class="general-heading py-5 text-center">
-                <i class="fa-solid fa-rocket rocket"></i>
-                <h2 class="my-3">What We Provide</h2>
-                <p class="fs-6 text-black-50 my-2 text-uppercase">Peace Of Our Magic</p>
-            </div>
-            <div class="content my-3">
-                <ul class="d-flex align-items-center justify-content-center p-0">
-                    <li>
-                        <a class="btn text-white mx-2 px-3 rounded-pill main-btn text-center" href="#">All</a>
-                    </li>
-                    <li>
-                        <a class="mx-2 px-3 py-2 text-center" href="#">Design</a>
-                    </li>
-                    <li>
-                        <a class="mx-2 px-3 py-2 text-center" href="#">Code</a>
-                    </li>
-                    <li>
-                        <a class="mx-2 px-3 py-2 text-center" href="#">Photo</a>
-                    </li>
-                    <li>
-                        <a class="mx-2 px-3 py-2 text-center" href="#">App</a>
-                    </li>
-                </ul>
-                <div class="row my-3 sections">
-                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4 section">
-                        <div class="img">
-                            <img src="images/work-01.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4 section">
-                        <div class="img">
-                            <img src="images/work-02.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4 section">
-                        <div class="img">
-                            <img src="images/work-03.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4 section">
-                        <div class="img">
-                            <img src="images/work-04.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4 section">
-                        <div class="img">
-                            <img src="images/work-05.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4 section">
-                        <div class="img">
-                            <img src="images/work-06.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4 section">
-                        <div class="img">
-                            <img src="images/work-07.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4 section">
-                        <div class="img">
-                            <img src="images/work-08.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="more text-center">
-                    <a class="btn px-3 rounded-pill main-btn text-center more-services" href="#">I Want More</a>
-                </div>
-            </div>
+      <div class="container-sm">
+        <div class="general-heading py-5 text-center">
+          <i class="fa-solid fa-rocket rocket"></i>
+          <h2 class="my-3">What We Provide</h2>
+          <p class="fs-6 text-black-50 my-2 text-uppercase">
+            Peace Of Our Magic
+          </p>
         </div>
+        <div class="content my-3">
+          <ul class="d-flex align-items-center justify-content-center p-0">
+            <li>
+              <a
+                class="btn text-white mx-2 px-3 rounded-pill main-btn text-center"
+                href="#"
+                >All</a
+              >
+            </li>
+            <li>
+              <a class="mx-2 px-3 py-2 text-center" href="#">Design</a>
+            </li>
+            <li>
+              <a class="mx-2 px-3 py-2 text-center" href="#">Code</a>
+            </li>
+            <li>
+              <a class="mx-2 px-3 py-2 text-center" href="#">Photo</a>
+            </li>
+            <li>
+              <a class="mx-2 px-3 py-2 text-center" href="#">App</a>
+            </li>
+          </ul>
+          <div class="row my-3 sections">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4 section">
+              <div class="img">
+                <img src="images/work-01.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4 section">
+              <div class="img">
+                <img src="images/work-02.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4 section">
+              <div class="img">
+                <img src="images/work-03.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4 section">
+              <div class="img">
+                <img src="images/work-04.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4 section">
+              <div class="img">
+                <img src="images/work-05.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4 section">
+              <div class="img">
+                <img src="images/work-06.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4 section">
+              <div class="img">
+                <img src="images/work-07.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4 section">
+              <div class="img">
+                <img src="images/work-08.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="more text-center">
+            <a
+              class="btn px-3 rounded-pill main-btn text-center more-services"
+              href="#"
+              >I Want More</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
     <!-- E services-->
     <!-- -------------------------------------------------------------------------- -->
     <!-- S info -->
     <div class="info py-5" id="portfolio">
-        <div class="container-sm">
-            <div class="general-heading py-5 text-center">
-                <i class="fa-solid fa-rocket rocket"></i>
-                <h2 class="my-3">Some Info About Us</h2>
-                <p class="fs-6 text-black-50 my-2 text-uppercase">We Care About Specific Details</p>
-            </div>
-            <div class="bottom my-3">
-                <div class="head">
-                    <p class="mx-auto text-center text-black-50 my-3">Donec rutrum congue leo eget malesuada. Mauris
-                        blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta
-                        dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
-                </div>
-                <div class="content py-3 d-flex flex-column flex-md-row flex-lg-row">
-                    <div class="left my-3 px-2">
-                        <h3 class="my-2">Retina Design</h3>
-                        <p class="my-2 fs-6 text-black-50">Vestibulum ac diam sit amet quam vehicula elementum sed sit
-                            amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
-                        <p class="my-2 fs-6 text-black-50">Donec rutrum congue leo eget malesuada. Mauris blandit
-                            aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus.
-                            Proin eget tortor risus. Donec sollicitudin molestie malesuada</p>
-                        <a class="btn my-3 px-3 rounded-pill main-btn text-center more-services" href="#">Ask For
-                            Order</a>
-                    </div>
-                    <div class="right d-flex align-items-center justify-content-center">
-                        <img src="images/laptop.png" alt="">
-                    </div>
-                </div>
-            </div>
+      <div class="container-sm">
+        <div class="general-heading py-5 text-center">
+          <i class="fa-solid fa-rocket rocket"></i>
+          <h2 class="my-3">Some Info About Us</h2>
+          <p class="fs-6 text-black-50 my-2 text-uppercase">
+            We Care About Specific Details
+          </p>
         </div>
+        <div class="bottom my-3">
+          <div class="head">
+            <p class="mx-auto text-center text-black-50 my-3">
+              Donec rutrum congue leo eget malesuada. Mauris blandit aliquet
+              elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id
+              orci porta dapibus. Proin eget tortor risus. Donec sollicitudin
+              molestie malesuada.
+            </p>
+          </div>
+          <div class="content py-3 d-flex flex-column flex-md-row flex-lg-row">
+            <div class="left my-3 px-2">
+              <h3 class="my-2">Retina Design</h3>
+              <p class="my-2 fs-6 text-black-50">
+                Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+                dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar
+                a.
+              </p>
+              <p class="my-2 fs-6 text-black-50">
+                Donec rutrum congue leo eget malesuada. Mauris blandit aliquet
+                elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id
+                orci porta dapibus. Proin eget tortor risus. Donec sollicitudin
+                molestie malesuada
+              </p>
+              <a
+                class="btn my-3 px-3 rounded-pill main-btn text-center more-services"
+                href="#"
+                >Ask For Order</a
+              >
+            </div>
+            <div class="right d-flex align-items-center justify-content-center">
+              <img src="images/laptop.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- E info -->
     <!-- -------------------------------------------------------------------------- -->
     <!-- S members of the team-->
     <div class="team py-5" id="team">
-        <div class="container-sm">
-            <div class="general-heading py-5 text-center">
-                <i class="fa-solid fa-rocket rocket"></i>
-                <h2 class="my-3">Check the Power Of Our Team</h2>
-                <p class="fs-6 text-black-50 my-2 text-uppercase">The powerful Team</p>
-            </div>
-            <div class="bottom">
-                <div class="head my-3">
-                    <p class="mx-auto text-center text-black-50">Donec rutrum congue leo eget malesuada. Mauris blandit
-                        aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin
-                        eget tortor risus. Donec sollicitudin molestie malesuada.</p>
-                </div>
-                <div class="content py-3">
-                    <div class="row sections">
-                        <div class="col-sm-6 col-lg-3 rounded-5 section position-relative mb-3  ">
-                            <div class="image position-relative rounded-top-5 ">
-                                <img src="images/team-1.png" alt="" class="rounded-top-5">
-                            </div>
-                            <div class="text rounded-bottom-5">
-                                <p class="py-2 px-3 fw-semibold">Abood Mosa</p>
-                                <p class="p-3 rounded-bottom-5 fw-semibold">“I don't understand how we got by those
-                                    troops. I thought we were dead.“</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 rounded-5 section position-relative mb-3  ">
-                            <div class="image position-relative rounded-top-5 ">
-                                <img src="images/team-2.png" alt="" class="rounded-top-5">
-                            </div>
-                            <div class="text rounded-bottom-5">
-                                <p class="py-2 px-3 fw-semibold">Abood Mosa</p>
-                                <p class="p-3 rounded-bottom-5 fw-semibold">“I don't understand how we got by those
-                                    troops. I thought we were dead.“</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 rounded-5 section position-relative mb-3  ">
-                            <div class="image position-relative rounded-top-5 ">
-                                <img src="images/team-3.png" alt="" class="rounded-top-5">
-                            </div>
-                            <div class="text rounded-bottom-5">
-                                <p class="py-2 px-3 fw-semibold">Abood Mosa</p>
-                                <p class="p-3 rounded-bottom-5 fw-semibold">“I don't understand how we got by those
-                                    troops. I thought we were dead.“</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 rounded-5 section position-relative mb-3  ">
-                            <div class="image position-relative rounded-top-5 ">
-                                <img src="images/team-4.png" alt="" class="rounded-top-5">
-                            </div>
-                            <div class="text rounded-bottom-5">
-                                <p class="py-2 px-3 fw-semibold">Abood Mosa</p>
-                                <p class="p-3 rounded-bottom-5 fw-semibold">“I don't understand how we got by those
-                                    troops. I thought we were dead.“</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container-sm">
+        <div class="general-heading py-5 text-center">
+          <i class="fa-solid fa-rocket rocket"></i>
+          <h2 class="my-3">Check the Power Of Our Team</h2>
+          <p class="fs-6 text-black-50 my-2 text-uppercase">
+            The powerful Team
+          </p>
         </div>
+        <div class="bottom">
+          <div class="head my-3">
+            <p class="mx-auto text-center text-black-50">
+              Donec rutrum congue leo eget malesuada. Mauris blandit aliquet
+              elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id
+              orci porta dapibus. Proin eget tortor risus. Donec sollicitudin
+              molestie malesuada.
+            </p>
+          </div>
+          <div class="content py-3">
+            <div class="row sections">
+              <div
+                class="col-sm-6 col-lg-3 rounded-5 section position-relative mb-3"
+              >
+                <div class="image position-relative rounded-top-5">
+                  <img src="images/team-1.png" alt="" class="rounded-top-5" />
+                </div>
+                <div class="text rounded-bottom-5">
+                  <p class="py-2 px-3 fw-semibold">Abood Mosa</p>
+                  <p class="p-3 rounded-bottom-5 fw-semibold">
+                    “I don't understand how we got by those troops. I thought we
+                    were dead.“
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-sm-6 col-lg-3 rounded-5 section position-relative mb-3"
+              >
+                <div class="image position-relative rounded-top-5">
+                  <img src="images/team-2.png" alt="" class="rounded-top-5" />
+                </div>
+                <div class="text rounded-bottom-5">
+                  <p class="py-2 px-3 fw-semibold">Abood Mosa</p>
+                  <p class="p-3 rounded-bottom-5 fw-semibold">
+                    “I don't understand how we got by those troops. I thought we
+                    were dead.“
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-sm-6 col-lg-3 rounded-5 section position-relative mb-3"
+              >
+                <div class="image position-relative rounded-top-5">
+                  <img src="images/team-3.png" alt="" class="rounded-top-5" />
+                </div>
+                <div class="text rounded-bottom-5">
+                  <p class="py-2 px-3 fw-semibold">Abood Mosa</p>
+                  <p class="p-3 rounded-bottom-5 fw-semibold">
+                    “I don't understand how we got by those troops. I thought we
+                    were dead.“
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-sm-6 col-lg-3 rounded-5 section position-relative mb-3"
+              >
+                <div class="image position-relative rounded-top-5">
+                  <img src="images/team-4.png" alt="" class="rounded-top-5" />
+                </div>
+                <div class="text rounded-bottom-5">
+                  <p class="py-2 px-3 fw-semibold">Abood Mosa</p>
+                  <p class="p-3 rounded-bottom-5 fw-semibold">
+                    “I don't understand how we got by those troops. I thought we
+                    were dead.“
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- E  members of the team-->
     <!-- -------------------------------------------------------------------------- -->
     <!-- S partners -->
     <div class="partner py-5">
-        <div class="container-sm">
-            <div class="row my-3 sections">
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-3 section">
-                    <img src="images/tech-1.png" alt="">
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-3 section">
-                    <img src="images/tech-2.png" alt="">
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-3 section">
-                    <img src="images/tech-3.png" alt="">
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-3 section">
-                    <img src="images/tech-4.png" alt="">
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-3 section">
-                    <img src="images/tech-1.png" alt="">
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-3 section">
-                    <img src="images/tech-2.png" alt="">
-                </div>
-            </div>
+      <div class="container-sm">
+        <div class="row my-3 sections">
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-3 section">
+            <img src="images/tech-1.png" alt="" />
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-3 section">
+            <img src="images/tech-2.png" alt="" />
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-3 section">
+            <img src="images/tech-3.png" alt="" />
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-3 section">
+            <img src="images/tech-4.png" alt="" />
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-3 section">
+            <img src="images/tech-1.png" alt="" />
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-3 section">
+            <img src="images/tech-2.png" alt="" />
+          </div>
         </div>
+      </div>
     </div>
     <!-- E partners-->
     <!-- -------------------------------------------------------------------------- -->
     <!-- S deal-->
     <div class="deal py-5 text-center">
-        <h2 class="my-3">Start Your Project Now</h2>
-        <p class="fs-6 text-white-50 my-2 text-uppercase">Leave your description and we start the engine.Don't worry,you
-            can cancel anytime</p>
-        <a class="btn my-3 px-3 rounded-pill main-btn text-center more-services" href="#">Start New Project</a>
+      <h2 class="my-3">Start Your Project Now</h2>
+      <p class="fs-6 text-white-50 my-2 text-uppercase">
+        Leave your description and we start the engine.Don't worry,you can
+        cancel anytime
+      </p>
+      <a
+        class="btn my-3 px-3 rounded-pill main-btn text-center more-services"
+        href="#"
+        >Start New Project</a
+      >
     </div>
     <!-- E deal-->
     <!-- -------------------------------------------------------------------------- -->
     <!-- S article-->
     <div class="article py-5" id="article">
-        <div class="container-sm text-center">
-            <div class="general-heading py-5 text-center">
-                <i class="fa-solid fa-rocket rocket"></i>
-                <h2 class="my-3">Read Our Articles</h2>
-                <p class="fs-6 text-black-50 my-2 text-uppercase">New Stories</p>
-            </div>
-            <div class="row my-5 sections text-start">
-                <div class="col-md-6 col-lg-4 section my-3">
-                    <div class="image rounded-top-5">
-                        <img src="images/blog-1.jpg" alt="" class="rounded-top-5">
-                    </div>
-                    <div class="text rounded-bottom-5 p-3">
-                        <p class="fs-5 lh-lg">Jan 17, 2022</p>
-                        <h3 class="fs-5">Some Awesome Blog Title Here</h3>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 section my-3">
-                    <div class="image rounded-top-5">
-                        <img src="images/blog-2.jpg" alt="" class="rounded-top-5">
-                    </div>
-                    <div class="text rounded-bottom-5 p-3">
-                        <p class="fs-5 lh-lg">Jan 17, 2022</p>
-                        <h3 class="fs-5">Some Awesome Blog Title Here</h3>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 section my-3">
-                    <div class="image rounded-top-5">
-                        <img src="images/blog-3.jpg" alt="" class="rounded-top-5">
-                    </div>
-                    <div class="text rounded-bottom-5 p-3">
-                        <p class="fs-5 lh-lg">Jan 17, 2022</p>
-                        <h3 class="fs-5">Some Awesome Blog Title Here</h3>
-                    </div>
-                </div>
-            </div>
-            <a class="btn my-3 px-3 rounded-pill main-btn text-center more-services" href="#">See More Articles</a>
+      <div class="container-sm text-center">
+        <div class="general-heading py-5 text-center">
+          <i class="fa-solid fa-rocket rocket"></i>
+          <h2 class="my-3">Read Our Articles</h2>
+          <p class="fs-6 text-black-50 my-2 text-uppercase">New Stories</p>
         </div>
+        <div class="row my-5 sections text-start">
+          <div class="col-md-6 col-lg-4 section my-3">
+            <div class="image rounded-top-5">
+              <img src="images/blog-1.jpg" alt="" class="rounded-top-5" />
+            </div>
+            <div class="text rounded-bottom-5 p-3">
+              <p class="fs-5 lh-lg">Jan 17, 2022</p>
+              <h3 class="fs-5">Some Awesome Blog Title Here</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 section my-3">
+            <div class="image rounded-top-5">
+              <img src="images/blog-2.jpg" alt="" class="rounded-top-5" />
+            </div>
+            <div class="text rounded-bottom-5 p-3">
+              <p class="fs-5 lh-lg">Jan 17, 2022</p>
+              <h3 class="fs-5">Some Awesome Blog Title Here</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 section my-3">
+            <div class="image rounded-top-5">
+              <img src="images/blog-3.jpg" alt="" class="rounded-top-5" />
+            </div>
+            <div class="text rounded-bottom-5 p-3">
+              <p class="fs-5 lh-lg">Jan 17, 2022</p>
+              <h3 class="fs-5">Some Awesome Blog Title Here</h3>
+            </div>
+          </div>
+        </div>
+        <a
+          class="btn my-3 px-3 rounded-pill main-btn text-center more-services"
+          href="#"
+          >See More Articles</a
+        >
+      </div>
     </div>
     <!-- E article-->
     <!-- -------------------------------------------------------------------------- -->
     <!-- S email-->
     <div class="email py-5">
-        <div class="container-sm d-flex justify-content-between align-items-center">
-            <p class="fs-4">Subscribe to our Newsletter:</p>
-            <form action="" class="d-flex mx-2">
-                <input type="email" name="email" id="" placeholder="Enter  Email Address" class="textbox my-3" required>
-                <input type="submit" value="Subscribe"
-                    class="btn my-3 mx-3 rounded-pill main-btn text-center more-services">
-            </form>
-        </div>
+      <div
+        class="container-sm d-flex justify-content-between align-items-center"
+      >
+        <p class="fs-4">Subscribe to our Newsletter:</p>
+        <form action="" class="d-flex mx-2">
+          <input
+            type="email"
+            name="email"
+            id=""
+            placeholder="Enter  Email Address"
+            class="textbox my-3"
+            required
+          />
+          <input
+            type="submit"
+            value="Subscribe"
+            class="btn my-3 mx-3 rounded-pill main-btn text-center more-services"
+          />
+        </form>
+      </div>
     </div>
     <!-- E email-->
     <!---------------------------------------------------------------------------- -->
     <!-- S footer-->
     <footer class="py-5" id="terms">
-        <div class="container-sm">
-            <div class="row my-5 sections text-start">
-                <div class="col-sm-6 col-lg-3 section my-3">
-                    <img src="images/logo.png" alt="">
-                    <p class="text-white-50 mt-3 mb-5 fs-6">Pellentesque in ipsum id orci porta dapibus. Vivamus magna
-                        justo, lacinia eget consectetur sed, convallis at tellus.</p>
-                    <p class="text-white-50 my-0 fs-">created by <span>Osama</span></p>
-                    <p class="text-white p-0 m-0 fw-bold">2022 - &copy; -Bondi Inc</p>
-                </div>
-                <div class="col-sm-6 col-lg-3 section my-3 d-flex flex-column gap-2">
-                    <h4 class="text-white">links</h4>
-                    <a href="#" class="text-white-50">Home</a>
-                    <a href="#features" class="text-white-50">Our Features</a>
-                    <a href="#servives" class="text-white-50">Our Services</a>
-                    <a href="#portfolio" class="text-white-50">Portfolio</a>
-                    <a href="#team" class="text-white-50">Testimonials</a>
-                    <a href="#article" class="text-white-50">Our Blog</a>
-                    <a href="#terms" class="text-white-50">Terms And Condtions</a>
-                </div>
-                <div class="col-sm-6 col-lg-3 section my-3 d-flex flex-column gap-2">
-                    <h4 class="text-white">About Us</h4>
-                    <a href="#" class="text-white-50">Sign In</a>
-                    <a href="#" class="text-white-50">Register</a>
-                    <a href="#" class="text-white-50">About Us</a>
-                    <a href="#article" class="text-white-50">Blog</a>
-                    <a href="#terms" class="text-white-50">Contact Us</a>
-                </div>
-                <div class="col-sm-6 col-lg-3 section my-3">
-                    <h4 class="text-white">Contact Us</h4>
-                    <p class="text-white-50 mt-3 mb-5 fs-6">Get in touch with us via mail phone.We are waiting for your
-                        call or message</p>
-                    <a class="btn my-3 px-3 rounded-pill main-btn text-center more-services"
-                        href="#">graphberry@gmail.co</a>
-                    <div class="icons my-3 d-flex gap-3">
-                        <a href="#">
-                            <i class="fa-brands fa-facebook-f fs-5"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-x-twitter fs-5"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-linkedin-in fs-5"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-youtube fs-5"></i>
-                        </a>
-                    </div>
-                </div>
+      <div class="container-sm">
+        <div class="row my-5 sections text-start">
+          <div class="col-sm-6 col-lg-3 section my-3">
+            <img src="images/logo.png" alt="" />
+            <p class="text-white-50 mt-3 mb-5 fs-6">
+              Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo,
+              lacinia eget consectetur sed, convallis at tellus.
+            </p>
+            <p class="text-white-50 my-0 fs-">created by <span>Osama</span></p>
+            <p class="text-white p-0 m-0 fw-bold">2022 - &copy; -Bondi Inc</p>
+          </div>
+          <div class="col-sm-6 col-lg-3 section my-3 d-flex flex-column gap-2">
+            <h4 class="text-white">links</h4>
+            <a href="#" class="text-white-50">Home</a>
+            <a href="#features" class="text-white-50">Our Features</a>
+            <a href="#servives" class="text-white-50">Our Services</a>
+            <a href="#portfolio" class="text-white-50">Portfolio</a>
+            <a href="#team" class="text-white-50">Testimonials</a>
+            <a href="#article" class="text-white-50">Our Blog</a>
+            <a href="#terms" class="text-white-50">Terms And Condtions</a>
+          </div>
+          <div class="col-sm-6 col-lg-3 section my-3 d-flex flex-column gap-2">
+            <h4 class="text-white">About Us</h4>
+            <a href="#" class="text-white-50">Sign In</a>
+            <a href="#" class="text-white-50">Register</a>
+            <a href="#" class="text-white-50">About Us</a>
+            <a href="#article" class="text-white-50">Blog</a>
+            <a href="#terms" class="text-white-50">Contact Us</a>
+          </div>
+          <div class="col-sm-6 col-lg-3 section my-3">
+            <h4 class="text-white">Contact Us</h4>
+            <p class="text-white-50 mt-3 mb-5 fs-6">
+              Get in touch with us via mail phone.We are waiting for your call
+              or message
+            </p>
+            <a
+              class="btn my-3 px-3 rounded-pill main-btn text-center more-services"
+              href="#"
+              >graphberry@gmail.co</a
+            >
+            <div class="icons my-3 d-flex gap-3">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f fs-5"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-x-twitter fs-5"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-linkedin-in fs-5"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-youtube fs-5"></i>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- E footer-->
     <!---------------------------------------------------------------------------- -->
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script>
-        document.addEventListener('click', function (event) {
-            const menu = document.getElementById('menu');
-            const navbarToggler = document.querySelector('.navbar-toggler');
+      document.addEventListener('click', function (event) {
+        const menu = document.getElementById('menu');
+        const navbarToggler = document.querySelector('.navbar-toggler');
 
-            // Check if the click is outside the navbar menu and toggler
-            if (!menu.contains(event.target) && !navbarToggler.contains(event.target)) {
-                const navbarCollapse = new bootstrap.Collapse(menu, {
-                    toggle: false
-                });
-                navbarCollapse.hide();
-            }
-        });
+        // Check if the click is outside the navbar menu and toggler
+        if (
+          !menu.contains(event.target) &&
+          !navbarToggler.contains(event.target)
+        ) {
+          const navbarCollapse = new bootstrap.Collapse(menu, {
+            toggle: false,
+          });
+          navbarCollapse.hide();
+        }
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
